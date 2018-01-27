@@ -1,0 +1,353 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: helvetica, sans-serif;
+  background: #ebeef3;
+  color: #616161;
+}
+
+a {
+  text-decoration: none;
+  color: #616161;
+}
+
+image {
+  display: block;
+  width: 100px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.navbar {
+  background: #fff;
+  padding: 15px 25px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+          box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.navbar__brand a {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.navbar__list {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  display: inline;
+  margin-left: 25px;
+}
+
+.form {
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+          box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+  width: 30%;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+.form__group {
+  margin-top: 15px;
+}
+
+.form__group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form__control {
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  background: #fafafa;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+  outline: none;
+  padding: 8px;
+}
+
+.form__control:focus {
+  background: rgba(255, 245, 254, 0.31);
+}
+
+.form__qty {
+  width: 45%;
+  margin: 0 10px;
+}
+
+.form__margin {
+  margin-bottom: 10px;
+}
+
+.form__description {
+  height: 152px;
+}
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  font-size: 13px;
+  height: 30px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background: #f4f4f4;
+  color: #484746;
+  -webkit-box-shadow: 0 1px lightgray;
+          box-shadow: 0 1px lightgray;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.15em;
+}
+
+.btn:active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn[disabled] {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.btn__primary {
+  background: #3aa3e3;
+  color: #fff;
+  -webkit-box-shadow: 0 1px #1b81bf;
+          box-shadow: 0 1px #1b81bf;
+}
+
+.btn__danger {
+  background: #e75650;
+  color: #ffffff;
+  -webkit-box-shadow: 0 1px #d7251e;
+          box-shadow: 0 1px #d7251e;
+}
+
+.error__control {
+  color: #e53935;
+}
+
+.error__bg {
+  background: #ffcdd2 !important;
+}
+
+.flash {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+.flash__success {
+  background: #a5d6a7;
+  border: 1px solid #81c784;
+  color: #1b5e20;
+}
+
+.flash__error {
+  background: #ef9a9a;
+  border: 1px solid #e57373;
+  color: #b71c1c;
+}
+
+.recipe__header {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+          box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  margin-top: 10px;
+}
+
+.recipe__list {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recipe__item {
+  width: 33.33%;
+}
+
+.recipe_inner {
+  display: block;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+          box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.recipe__name {
+  padding: 10px;
+  margin: 0;
+}
+
+.recipe__show {
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.recipe__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.recipe__box {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+          box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+  background: #fff;
+  padding: 15px;
+}
+
+.recipe__title {
+  color: #e91e63;
+}
+
+.recipe__image {
+  width: 40%;
+}
+
+.recipe__details {
+  width: 60%;
+}
+
+.recipe__details_inner {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+          box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+  background: #fff;
+  padding: 15px;
+  margin-left: 25px;
+}
+
+.recipe__ingredients {
+  width: 40%;
+}
+
+.recipe__ingredients ul {
+  margin: 0;
+  padding: 0;
+}
+
+.recipe__ingredients li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+  border-top: 1px dashed #e9e9e9;
+}
+
+.recipe__directions {
+  width: 60%;
+}
+
+.recipe__directions ul {
+  margin: 0;
+  padding: 0;
+}
+
+.recipe__directions li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px dashed #e9e9e9;
+}
+
+.recipe__directions_inner {
+  margin-left: 25px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+          box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0;
+  background: #fff;
+  padding: 15px;
+}
+
+.recipe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.image__upload {
+  height: 257px;
+  background-color: #fafafa;
+  border: 1px dashed rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image__preview {
+  position: relative;
+}
+
+.image__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
